@@ -48,7 +48,7 @@
       
 
        <div class="form-group">
-         <label for="post_status">Lastname</label>
+         <label for="movie_language">Lastname</label>
           <input type="text" class="form-control" name="user_lastname">
       </div>
      
@@ -70,23 +70,23 @@
       
 <!--
       <div class="form-group">
-         <label for="post_image">Post Image</label>
+         <label for="image">Post Image</label>
           <input type="file"  name="image">
       </div>
 -->
 
       <div class="form-group">
-         <label for="post_tags">Username</label>
+         <label for="movie_tags">Username</label>
           <input type="text" class="form-control" name="username">
       </div>
       
       <div class="form-group">
-         <label for="post_content">Email</label>
+         <label for="content">Email</label>
           <input type="email" class="form-control" name="user_email">
       </div>
       
       <div class="form-group">
-         <label for="post_content">Password</label>
+         <label for="content">Password</label>
           <input type="password" class="form-control" name="user_password">
       </div>
       
