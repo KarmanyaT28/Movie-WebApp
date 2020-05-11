@@ -15,7 +15,7 @@ if(isset($_POST['login'])){
     
     
    $query="SELECT * FROM users WHERE username='{$username}'";
-   $select_user_query = mysqli_query($connection,$password);
+   $select_user_query = mysqli_query($connection,$query);
     
     
    if(!$select_user_query){
@@ -35,20 +35,20 @@ if(isset($_POST['login'])){
     
 }
 
-if($username !== $db_username && $password !== $$db_user_password){
+if($username !== $db_username && $password !== $db_user_password){
     header("Location:../index.php");
     
 }
 
-else if($$username == $db_username && $password == $$db_user_password){
+else if($username == $db_username && $password == $db_user_password){
     $_SESSION['username']= $db_username;
-    $_SESSION['user_firstname']= $db_user_firstname;
-    $_SESSION['user_lastname']= $db_user_lastname;
+    $_SESSION['firstname']= $db_user_firstname;
+    $_SESSION['lastname']= $db_user_lastname;
     $_SESSION['user_role']= $db_user_role;
     
     
     
-    header("Location:../admin.php");
+    header("Location:../admin");
     
     
 }
