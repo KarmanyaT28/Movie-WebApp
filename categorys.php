@@ -19,41 +19,41 @@ include "include/navigation.php"
             <div class="col-md-8">
                 
                 <?php
-                
+    
     
              if(isset($_GET['categorys'])){
-                   $post_category_id= $_GET['categorys'];
+                   $movie_category_id= $_GET['categorys'];
                 }
     
-                $query="SELECT * FROM posts WHERE post_category_id=$post_category_id";
+                $query="SELECT * FROM posts WHERE movie_category_id=$movie_category_id";
                 $select_all_posts_query = mysqli_query($connection,$query);
                 
                 while($row = mysqli_fetch_assoc($select_all_posts_query)){
-                    $post_id=  $row['post_id'];
-                    $post_title=  $row['post_title'];
-                    $post_author=  $row['post_author'];
-                    $post_date=  $row['post_date'];
-                    $post_image=  $row['post_image'];
-                    $post_content=  substr($row['post_content'],0,100);
+                    $movie_id=  $row['movie_id'];
+                    $movie_name=  $row['movie_name'];
+                    $movie_actor=  $row['movie_actor'];
+                    $date_of_release=  $row['date_of_release'];
+                    $image=  $row['image'];
+                    $content=  substr($row['content'],0,100);
                    ?>
                    
-                    <h1 class="page-header">
+                  <!--  <h1 class="page-header">
                     Page Heading
                     <small>Secondary Text</small>
-                </h1>
+                </h1>-->
 
                 <!-- First Blog Post -->
                 <h2>
-                    <a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title?></a>
+                    <a href="post.php?p_id=<?php echo $movie_id; ?>"><?php echo $movie_name?></a>
                 </h2>
                 <p class="lead">
-                    by <a href="index.php"><?php echo $post_author ?></a>
+                    by <a href="index.php"><?php echo $movie_actor ?></a>
                 </p>
-                <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date?></p>
+                <p><span class="glyphicon glyphicon-time"></span> <?php echo $date_of_release?></p>
                 <hr>
-                <img class="img-responsive" src="images/<?php echo $post_image;?>" alt="">
+                <img class="img-responsive" src="images/<?php echo $image;?>" alt="">
                 <hr>
-                <p><?php echo $post_content?></p>
+                <p><?php echo $content?></p>
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                 <hr>
