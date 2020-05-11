@@ -1,11 +1,10 @@
-
 <!-- Blog Sidebar Widgets Column -->
             <div class="col-md-4">
                  
 
                 <!-- Blog Search Well -->
                 <div class="well">
-                    <h4>Blog Search</h4>
+                    <h4>What do you wish to watch?</h4>
                     <form action="search.php" method="post">
                     <div class="input-group">
                         <input name="search" type="text" class="form-control">
@@ -42,10 +41,7 @@
                    </div>
 
                     <!--<div class="form-group">
-
                         <a href="forgot.php?forgot=<?php echo uniqid(true); ?>">Forgot Password</a>
-
-
                     </div>-->
 
                 </form><!--search form-->
@@ -72,7 +68,7 @@
         $query = "SELECT * FROM categories";
         $select_categories_sidebar = mysqli_query($connection,$query);         
         ?>
-                 <h4>Blog Categories</h4>
+                 <h2>Categories</h2>
                     <div class="row">
                         <div class="col-lg-12">
                             <ul class="list-unstyled">
@@ -101,4 +97,3 @@
                  <?php include "widget.php"; ?>
 
             </div>
-            
