@@ -1,3 +1,4 @@
+
 <?php 
 include "include/header.php"
 ?>
@@ -12,55 +13,71 @@ include "include/navigation.php"
 
     <!-- Page Content -->
     <div class="container">
-
+     
         <div class="row">
+            
 
             <!-- Blog Entries Column -->
             <div class="col-md-8">
-                
+                  <div class="Text">
+                    <h1 class="page-header">
+                    <b style="font-size:200%;">Watch Here</b>
+                        <br>
+                    <strong style="color:dark-violet;font-size:100%;">Trending Now</strong>
+                </h1>
+                </div>
                 <?php
     
                 $query="SELECT * FROM posts";
                 $select_all_posts_query = mysqli_query($connection,$query);
                 
                 while($row = mysqli_fetch_assoc($select_all_posts_query)){
-                    $post_id=  $row['post_id'];
-                    $post_title=  $row['post_title'];
-                    $post_author=  $row['post_author'];
-                    $post_date=  $row['post_date'];
-                    $post_image=  $row['post_image'];
-                    $post_content= substr($row['post_content'],0,100);
+                    $movie_id=  $row['movie_id'];
+                    $movie_name=  $row['movie_name'];
+                    $movie_actor=  $row['movie_actor'];
+                    $date_of_release=  $row['date_of_release'];
+                    $image=  $row['image'];
+                    $content= substr($row['content'],0,100);
                    ?>
-                   
-                    <h1 class="page-header">
-                    Page Heading
-                    <small>Secondary Text</small>
-                </h1>
-
+              
+                 
                 <!-- First Blog Post -->
+                <div class="blog-post-1">
                 <h2>
-                    <a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title?></a>
+                    <a href="posts.php?p_id=<?php echo $movie_id; ?>"><?php echo $movie_name?></a>
                 </h2>
+                
                 <p class="lead">
-                    by <a href="index.php"><?php echo $post_author ?></a>
+                    by <a href="index.php"><?php echo $movie_actor ?></a>
                 </p>
-                <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date?></p>
-                <hr>
-                <img class="img-responsive" src="images/<?php echo $post_image;?>" alt="">
-                <hr>
-                <p><?php echo $post_content?></p>
+                <p><span class="glyphicon glyphicon-time"></span> <?php echo $date_of_release?></p>
+                    <hr>
+                    <img class="img-responsive" src="images/<?php echo $image;?>" alt="">
+                    
+                    <hr>
+                <p><?php echo $content?></p>
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-                <hr>
-
+                
+                    
+                    
+              </div>
+                
+                
+                
+                
+                
+                
                 <?php }
     
                 ?>
-
                 
-                
-
             </div>
+            
+            
+            
+            
+            
+            
 
             <!-- Blog Sidebar Widgets Column -->
             <?php include "include/sidebar.php"; ?>
@@ -72,35 +89,3 @@ include "include/navigation.php"
 
 
 <?php include "include/footer.php"; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
