@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="actor" content="">
 
-    <title>Blog Home - Start Bootstrap Template</title>
+    <title>MovieDare Homepage</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,5 +25,24 @@
     <![endif]-->
 
 </head>
+<style>
+    .Text{
+        color:cadetblue;
+        font-style: oblique;
+        font-size: 100;
+        
+    }   
+    
+    .blog-post-1{
+        color:white;
+        font-size:150%;
+    }
+    .search{
+        color:white;
+        font-size:150%;
+    }
+    
+    
+</style>
 
-<body>
+<body style="background:url(images/popcorn.png);">
