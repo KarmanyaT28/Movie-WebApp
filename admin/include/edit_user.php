@@ -42,8 +42,8 @@ if(isset($_GET['edit_user'])){
             $user_lastname    =$_POST['user_lastname'];
             $user_role        = $_POST['user_role'];
     
-           // $post_image = $_FILES['image']['name'];
-           // $post_image_temp = $_FILES['image']['tmp_name'];
+           // $image = $_FILES['image']['name'];
+           // $image_temp = $_FILES['image']['tmp_name'];
     
     
             $username      =$_POST['username'];
@@ -134,7 +134,7 @@ if(isset($_GET['edit_user'])){
       
 
        <div class="form-group">
-         <label for="post_status">Lastname</label>
+         <label for="movie_language">Lastname</label>
           <input type="text" value="<?php echo $user_lastname; ?>" class="form-control" name="user_lastname">
       </div>
      
@@ -167,23 +167,23 @@ if(isset($_GET['edit_user'])){
       
 <!--
       <div class="form-group">
-         <label for="post_image">Post Image</label>
+         <label for="image">Post Image</label>
           <input type="file"  name="image">
       </div>
 -->
 
       <div class="form-group">
-         <label for="post_tags">Username</label>
+         <label for="movie_tags">Username</label>
           <input type="text" value="<?php echo $username; ?>" class="form-control" name="username">
       </div>
       
       <div class="form-group">
-         <label for="post_content">Email</label>
+         <label for="content">Email</label>
           <input type="email" value="<?php echo $user_email; ?>" class="form-control" name="user_email">
       </div>
       
       <div class="form-group">
-         <label for="post_content">Password</label>
+         <label for="content">Password</label>
           <input type="password" value="<?php //echo $user_password; ?>" class="form-control" name="user_password">
       </div>
       
