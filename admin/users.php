@@ -20,8 +20,8 @@
         <div class="col-lg-12">
 
   <h1 class="page-header">
-                Welcome to admin
-                <small>Author</small>
+               <b style="font-size:300%;"><i>Welcome Users:</i> </b>
+                <small></small>
             </h1>
             
             
