@@ -17,8 +17,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            WELCOME TO ADMIN
-                            <small>Subheading</small>
+                            <b style="color:Dark-Blue;font-size:200%;font-family:sans-seriff;">ADD YOUR CHOICE HERE:</b>
+                            <small></small>
                         </h1>
                         <div class="col-xs-6">
                         
