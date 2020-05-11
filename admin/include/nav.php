@@ -1,4 +1,5 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -7,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">CMS Admin</a>
+                <a class="navbar-brand" href="index.php"><b>Enjoy Your Movie</b></a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -23,10 +24,26 @@
                                     </span>
                                     <div class="media-body">
                                         <h5 class="media-heading">
-                                            <strong>John Smith</strong>
+                                            <strong>DK</strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        <p>This Looks Really Good!!!!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">
+                                            <strong>DK</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>This website is very awesome</p>
                                     </div>
                                 </div>
                             </a>
@@ -42,23 +59,7 @@
                                             <strong>John Smith</strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        <p>Awesome Work!! You first year guys!!!</p>
                                     </div>
                                 </div>
                             </a>
@@ -71,23 +72,24 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
                     <ul class="dropdown-menu alert-dropdown">
+                        
                         <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                            <a href="#">Account  <span class="label label-default">Check Now</span></a>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                            <a href="#">Balance  <span class="label label-primary">Check Now</span></a>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                            <a href="#">Usage/D  <span class="label label-success">Check Now</span></a>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                            <a href="#">AboutUs  <span class="label label-info">Check Now</span></a>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                            <a href="#">Contact  <span class="label label-warning">Check Now</span></a>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                            <a href="#">Details  <span class="label label-danger">Check Now</span></a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -96,7 +98,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>Steve <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -109,7 +111,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="../include/logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -127,7 +129,7 @@
                                 <a href="./posts.php">View all posts</a>
                             </li>
                             <li>
-                                <a href="http://localhost/cms/admin/posts.php?source=add_post">Add posts</a>
+                                <a href="http://localhost/movie/admin/posts.php?source=add_post">Add posts</a>
                             </li>
                         </ul>
                     </li>
@@ -136,10 +138,10 @@
                     </li>
                     
                     <li class="active">
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Comments </a>
+                        <a href="#"><i class="fa fa-fw fa-file"></i> Comments </a>
                     </li>
                     <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> Profile</a>
+                        <a href="profile.php"><i class="fa fa-fw fa-dashboard"></i> Profile</a>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Users <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
@@ -147,7 +149,7 @@
                                 <a href="./users.php">View all users</a>
                             </li>
                             <li>
-                                <a href="http://localhost/cms/admin/users.php?source=add_user">Add users</a>
+                                <a href="http://localhost/movie/admin/users.php?source=add_user">Add users</a>
                             </li>
                         </ul>
                     </li>
