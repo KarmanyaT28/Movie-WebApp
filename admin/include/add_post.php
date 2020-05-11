@@ -1,26 +1,26 @@
 <?php
    if(isset($_POST['create_post'])){
        
-            $post_title        = $_POST['title'];
-            $post_author       = $_POST['author'];
-            $post_category_id  = $_POST['post_category'];
-            $post_status       = $_POST['post_status'];
+            $movie_name        = $_POST['title'];
+            $movie_actor       = $_POST['actor'];
+            $movie_category_id  = $_POST['movie_category'];
+            $movie_language       = $_POST['movie_language'];
     
-            $post_image        = $_FILES['image']['name'];
-            $post_image_temp   = $_FILES['image']['tmp_name'];
+            $image        = $_FILES['image']['name'];
+            $image_temp   = $_FILES['image']['tmp_name'];
     
     
-            $post_tag       =       $_POST['post_tag'];
-            $post_content      = $_POST['post_content'];
-            $post_date         = date('d-m-y');
-            $post_comment_count = 4;
+            $movie_tags       =       $_POST['movie_tags'];
+            $content      = $_POST['content'];
+            $date_of_release        = date('d-m-y');
+            $watched_count = 4;
 
-             move_uploaded_file($post_image_temp, "../images/$post_image" );
+             move_uploaded_file($image_temp, "../images/$image" );
+    
        
+       $query = "INSERT INTO posts(movie_category_id, movie_name, movie_actor,date-of-release,image,content,movie_tags,watched_count,movie_language) ";
        
-       $query = "INSERT INTO posts(post_category_id, post_title, post_author,post_date,post_image,post_content,post_tag,post_comment_count,post_status) ";
-       
-       $query .= "VALUES({$post_category_id},'{$post_title}','{$post_author}',now(),'{$post_image}','{$post_content}','{$post_tag}','{$post_comment_count}', '{$post_status}') "; 
+       $query .= "VALUES({$movie_category_id},'{$movie_name}','{$movie_actor}',now(),'{$image}','{$content}','{$movie_tags}','{$watched_count}', '{$movie_language}') "; 
              
        
        $create_post_query = mysqli_query($connection, $query);  
@@ -34,18 +34,18 @@
      
      
       <div class="form-group">
-         <label for="title">Post Title</label>
+         <label for="title">Movie Title</label>
           <input type="text" class="form-control" name="title">
       </div>
       
       <div class="form-group">
-         <label for="author">Post Author</label>
-          <input type="text" class="form-control" name="author">
+         <label for="actor">Actor</label>
+          <input type="text" class="form-control" name="actor">
       </div>
      
      <div class="form-group">
        <label for="categories">Categories</label>
-       <select name="post_category" id="">
+       <select name="movie_category" id="">
            
       <?php
 
@@ -60,7 +60,7 @@
         $cat_title = $row['cat_title'];
 
 
-        if($cat_id == $post_category_id) {
+        if($cat_id == $movie_category_id) {
 
       
         echo "<option selected value='{$cat_id}'>{$cat_title}</option>";
@@ -87,23 +87,23 @@
       
       
       <div class="form-group">
-         <label for="post_status">Post Status</label>
-          <input type="text" class="form-control" name="post_status">
+         <label for="movie_language">Movie Language</label>
+          <input type="text" class="form-control" name="movie_language">
       </div>
       
       <div class="form-group">
-         <label for="post_image">Post Image</label>
+         <label for="image">Image</label>
           <input type="file" name="image">
       </div>
       
      <div class="form-group">
-         <label for="post_tag">Post Tags</label>
-          <input type="text" class="form-control" name="post_tag">
+         <label for="movie_tags">Movie Tags</label>
+          <input type="text" class="form-control" name="movie_tags">
       </div>
       
      <div class="form-group">
-         <label for="post_content">Post Content</label>
-          <textarea class="form-control" name="post_content" id="" cols="30" rows="10">
+         <label for="content"> Content</label>
+          <textarea class="form-control" name="content" id="" cols="30" rows="10">
          </textarea>
       </div>
       
