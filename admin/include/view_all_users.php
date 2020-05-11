@@ -37,7 +37,7 @@
         echo "<td>$user_firstname</td>";
             
 //        
-//        $query = "SELECT * FROM categories WHERE cat_id = {$post_category_id} ";
+//        $query = "SELECT * FROM categories WHERE cat_id = {$movie_category_id} ";
 //        $select_categories_id = mysqli_query($connection,$query);  
 //
 //        while($row = mysqli_fetch_assoc($select_categories_id)) {
@@ -54,13 +54,13 @@
         echo "<td>$user_role</td>";
         
         
-//        $query = "SELECT * FROM posts WHERE post_id = $comment_post_id ";
-//        $select_post_id_query = mysqli_query($connection,$query);
-//        while($row = mysqli_fetch_assoc($select_post_id_query)){
-//        $post_id = $row['post_id'];
-//        $post_title = $row['post_title'];
+//        $query = "SELECT * FROM posts WHERE movie_id = $comment_movie_id ";
+//        $select_movie_id_query = mysqli_query($connection,$query);
+//        while($row = mysqli_fetch_assoc($select_movie_id_query)){
+//        $movie_id = $row['movie_id'];
+//        $movie_name = $row['movie_name'];
 //            
-//            echo "<td><a href='../post.php?p_id=$post_id'>$post_title</a></td>";
+//            echo "<td><a href='../post.php?p_id=$movie_id'>$movie_name</a></td>";
 //        
 //        
 //        }
