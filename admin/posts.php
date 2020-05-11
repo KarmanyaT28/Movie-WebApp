@@ -17,8 +17,8 @@
                 <div class="row">
                    <div class="col-lg-12">
                     <h1 class="page-header">
-                            WELCOME TO ADMIN
-                            <small>Subheading</small>
+                            <b style="font-family:verdana;font-size:200%;color:Black">Movies You Like:</b>
+                            <small></small>
                         </h1>
                         
                         <?php 
